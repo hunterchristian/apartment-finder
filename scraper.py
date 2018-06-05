@@ -115,7 +115,7 @@ def do_scrape():
     """
 
     # Create a slack client.
-    sc = SlackClient(settings.SLACK_TOKEN)
+    sc = SlackClient(settings.SLACK_BOT_TOKEN)
 
     # Get all the results from craigslist.
     all_results = []

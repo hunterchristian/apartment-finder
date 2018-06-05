@@ -54,7 +54,7 @@ Configuration
 ## Manual
 
 * Create a file called `private.py` in this folder.
-    * Add a value called `SLACK_TOKEN` that contains your Slack API token.
+    * Add a value called `SLACK_BOT_TOKEN` that contains your Slack API token.
     * Add any other values you want to `private.py`.
 
 Installation + Usage
@@ -65,9 +65,9 @@ Installation + Usage
 * Make sure to do the steps in the configuration section above first.
 * Install Docker by following [these instructions](https://docs.docker.com/engine/installation/).
 * To run the program with the default configuration:
-    * `docker run -d -e SLACK_TOKEN={YOUR_SLACK_TOKEN} dataquestio/apartment-finder`
+    * `docker run -d -e SLACK_BOT_TOKEN={YOUR_SLACK_BOT_TOKEN} dataquestio/apartment-finder`
 * To run the program with your own configuration:
-    * `docker run -d -e SLACK_TOKEN={YOUR_SLACK_TOKEN} -v {ABSOLUTE_PATH_TO_YOUR_CONFIG_FOLDER}:/opt/wwc/apartment-finder/config dataquestio/apartment-finder`
+    * `docker run -d -e SLACK_BOT_TOKEN={YOUR_SLACK_BOT_TOKEN} -v {ABSOLUTE_PATH_TO_YOUR_CONFIG_FOLDER}:/opt/wwc/apartment-finder/config dataquestio/apartment-finder`
     
 ## Manual
 
